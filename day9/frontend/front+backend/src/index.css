@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,body,root{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(43, 43, 43);
+  color: aliceblue;
+  padding: 20px;
+}
+.notes{
+  display: flex;
+  gap: 1rem;
+  margin: 10px;
+}
+.note{
+  background-color:rgb(103, 102, 102) ;
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+h1{
+  font-size: 2rem;
+}
+p{
+  font-size: 20px;
+}
+.Note-form{
+  margin: 10px;
+  display: flex;
+  gap: 1rem;
+}
+button{
+  padding: 10px 20px; 
+  border-radius: 10px;
+  background-color: rgb(35, 68, 42);
+}
+input{
+  width: 200px;
+  height: 50px;
+  padding: 10px 20px;
+  border-radius: 10px;
+
+}
