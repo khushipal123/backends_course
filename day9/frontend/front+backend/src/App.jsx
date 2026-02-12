@@ -6,7 +6,7 @@ const App = () => {
   ]);
 
   function fetchApi(){
-       axios.get("http://localhost:3000/notes")
+       axios.get("https://backends-course.onrender.com//notes")
       .then((res) => {
       
         setNotes(res.data.note)
@@ -19,7 +19,7 @@ const App = () => {
     e.preventDefault()
     const {title , description} = e.target.elements
     console.log(title.value ,description.value)
-    axios.post("http://localhost:3000/notes",{
+    axios.post("https://backends-course.onrender.com//notes",{
       title:title.value,
       description:description.value
     })
@@ -31,7 +31,7 @@ const App = () => {
   }
 function handleDelete(noteId){
 
-    axios.delete(`http://localhost:3000/notes/${noteId}`)
+    axios.delete(`https://backends-course.onrender.com/notes/${noteId}`)
     .then(res=>{
        console.log(res.data)
       fetchApi()
